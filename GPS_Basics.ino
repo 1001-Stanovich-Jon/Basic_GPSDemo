@@ -1,7 +1,7 @@
 // This file is frankensteined together, still needs editing
 
 // For OLED we'll use Adafruit's built in library (we can look at this later if you want)
-//#include <SPI.h>
+#include <SPI.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
@@ -26,7 +26,6 @@ SoftwareSerial GPSSerial(GPSTX, GPSRX); // First argument is pin to RECEIVE data
 #include <SPI.h>
 #include <SD.h>
 const int chipSelect = 10;
-
 
 File myFile;
 
@@ -150,21 +149,4 @@ void loop() {
     Serial.println("error opening file");
   }
   
-  SD.close("GPSTest.txt");
-  
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-UNRAero-GPS-OLED/FirstIteration.ino at main · 1001-Stanovich-Jon/UNRAero-GPS-OLED
