@@ -95,7 +95,7 @@ void loop() {
   display.setCursor(0,0);
 
   int maxMessage = 150;
-  char GPSData[maxMessage + 1];
+  char GPSData[maxMessage];
   int charCount = 0;
   while (GPSSerial.available() > 0 && charCount < maxMessage) {
     GPSData[charCount] = GPSSerial.read();
