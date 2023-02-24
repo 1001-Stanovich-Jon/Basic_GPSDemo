@@ -81,15 +81,38 @@ The pinout for the microSD card slot is below
 
 ## Wiring
 
-It's good practice to leave your board unplugged until you have everything connected.
+It's good practice to leave your board unplugged until you have everything connected. We'll start with the breadboard and Arduino. For wiring here, it's easier to have hte SD card above the GPS chip as shown below.
 
-### Power Rails 
+![photo1](https://user-images.githubusercontent.com/84261577/221133055-8ffa0d03-0c07-4ccb-9c67-d4a0866d2026.png)
 
-### GPS Chip
+First, wire power and ground to your rails as shown below
 
-### microSD Card
+![powerwire](https://user-images.githubusercontent.com/84261577/221135365-4165a584-a811-447c-9f13-0014f680ff61.png)
+
+
+Then connect power and ground for the GPS module and card slot as shown below
+
+![chipPower](https://user-images.githubusercontent.com/84261577/221135392-d2899b30-2628-44c9-85f2-8da488c10415.png)
+
+
+
+Then, we'll follow the wiring:
+
+|Arduino Pin | microSD Slot Pin | GPS Pin|
+|---|---|---|
+|3 | NA | TX|
+|10 |CS (Orange) | NA |
+|11 |MOSI (Green)| NA |
+|12 |MISO (Blue)| NA |
+|13 |CLK (Yellow)| NA |
+
+However, since the card slot isn't labelled, you should just follow the image below (the colors are the same as in the table above):
+
+![commWires](https://user-images.githubusercontent.com/84261577/221135404-5d64de64-0f20-4f82-a5ee-53865af0372c.png)
 
 ### Indicator LEDs
+
+Add later, really late, need sleep.
 
 ---
 
