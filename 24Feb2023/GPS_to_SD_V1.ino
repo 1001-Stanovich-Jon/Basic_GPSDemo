@@ -26,13 +26,17 @@ void setup() {
   GPSSerial.begin(9600);
 
   Serial.println("Initialized.");
+
+  delay(5000); //Let GPS module have time to begin transmitting
+
+  Serial.println("Entering loop...");
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
   static int loopCount = 0;
   File dataFile;
-  char fname[] = "data.txt";
+  char fname[] = "data2.txt";
   dataFile = SD.open(fname, FILE_WRITE);
 
   if (dataFile) {
