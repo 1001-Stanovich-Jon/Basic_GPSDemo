@@ -12,12 +12,35 @@ OK, our goals for this session are:
 
 OK, if you're following along, last time we went over some of our decisions, we won't go into super detail again [(if you want that click here)](https://github.com/1001-Stanovich-Jon/Basic_GPSDemo/blob/main/Outline.md), but here's a basic summary:
 
-> We're choosing to use hardware from Adafruit because they have created breakout boards for the various sensors we would like to use. These breakout boards are made for ease of use, and typically involve little extra work to use besides simply connecting them properly. Connect to what? Our microcontroller.
-> Again, we are choosing to use the Arduino UNO platform because again it is made in a way that minimized our need for circuit design, 
-> and lets us easily connect sensors to it. Additionally, there is a huge community for both Adafruit and Arduino products, meaning there is
-> readily available documentation and troubleshooting, making it easy and quick to prototype many ideas without the need for in depth knowledge of 
-> electronics or microcontrollers. Regarding our sensor choices, we're using the GPS chip because it is the only breakout board by Adafruit, we're using the micro
-> SD cards because they are easily obtainable and relatively cheap.
+---
+
+### Why use Adafruit products again?
+
+We like Adafruit because they let us be lazy. They have designed breakoutboards for a large variety of sensors, which saves us the pain of reading datasheets, sourcing components, and designing PCBs. Also, this means we have a reference PCB for design in the future when we decide to make our own PCB (this is useful if the datasheet isn't good at describing external circuitry).
+
+Also because they have a ton of documentation, code libraries, and tutorials available for pretty much *ALL* of their products. This means its unlikely that we'll get stuck getting something to work. 
+
+Thanks Lady Ada.
+
+---
+
+### Why use Arduino?
+
+Well, again, it has all the external circuitry done, it's relatively cheap, and has a programming IDE for it that makes it easier to program than having to learn C/C++ and use other programmers to flash the chip. Also, the Arduino IDE is what makes it super easy to share libraries for the breakout boards. It's a great introduction to microcontrollers, and will let you become comfortable with the basics before eventually (well, maybe) learning how to do it without the Arduino base, or even on another microcontroller like the RP2040.
+
+Another reason is that it readily supports the most common communication protocols for hobby sensors:
+
+- USART
+- SPI
+- I2C
+
+Again, there is a huge community behind Arduino, just like Adafruit, and so it makes it incredibly easy to use Adafruits products and have a fairly painless experience getting off to a good start.
+
+Thanks Italians.
+
+---
+
+## Recap
 
 Besides our decision choices, we also covered the following last time:
 
@@ -33,41 +56,48 @@ For those of you playing along at home, we are using the Adafruit Ultimate GPS b
 
 ![gpsBreakout](https://user-images.githubusercontent.com/84261577/221063977-b65a2597-8a97-4116-b8c2-38e17f40589a.png)
 
-This chip allows us to receive GPS signals from the orbiting satellites. Last time we saw that signal reception can be drastically affected by your environment, as we lost the GPS signal once we walked inside.
-
-A quick pin overview:
-
-> - 3.3V --> (OUTPUT) Can output 3.3V and is possible of 100mA+ output
-> - EN --> (INPUT) This is the enable pin. Default pulled high, pull low to turn off GPS module.
-> - VBAT --> (INPUT) This in an input for an external battery
-> - FIX --> (OUTPUT) This is an indicator pin (it also drives the red LED). It pulses on off once a second if we **DO NOT** have a signal. It will remain off and pulse briefly once every 15 seconds if we **DO HAVE** a signal.
-> - TX --> (OUTPUT) The GPS chip transmits (sends) its data out from this pin
-> - RX --> (INPUT) The GPS chip receives data on this pin, can be used to request various NMEA sentences
-> - GND --> (INPUT) Ground connection
-> - VIN --> (INPUT) 3.3/5V Input (Has built in level shifter, 5V tolerant)
-> - PPS --> (OUTPUT) Pulse Per Second, i.e. it pulses HIGH once a second for around 50 - 100ms
-
-From the above, for now, we'll only be using 3 (maybe 4) of these pins, and they include
+This chip allows us to receive GPS signals from the orbiting satellites. Last time we saw that signal reception can be drastically affected by your environment, as we lost the GPS signal once we walked inside. For this session, we'll only be concerned with the following pins:
 
 > - TX
 > - GND
 > - VIN
 > - FIX (Maybe)
 
-## Saving Data
+and recall that it uses the USART communication protocol
 
-For now we are simply using a microSD card to save our data. They aren't any specific brand, any microSD card slot will work, as well as any microSD card.
-The main reason for this is because Adafruit also sells a *surface mounted SD card* breakout board, that will be compatible with the code we write here. Similarly, for non-violent uses the chip holder will suffice (e.g. RC Plane).
+## microSD
+
+We're just using an Amazon special because I'm cheap (and I hope you are too). Also, because Adafruit also offers a *surface mounted SD flash card* - **amazing**. This means any code we write for these, will work with a surface mounted component - this gives us flexibility. We can use the card and holders for non-violent situations, and the surface mount for the violent situations (i.e. rockets taking off and hugging the ground at high speeds). The card slots are nice too because you can actualy remove the card to retrieve the data.
+
+The pinout for the microSD card slot is below
+
+---
 
 ## Wiring
 
-## Reading GPS Data
+It's good practice to leave your board unplugged until you have everything connected.
 
-## Parsing GPS Data
+### Power Rails 
 
-## Using microSD Breakout Board
+### GPS Chip
 
-## Indicator LEDS
+### microSD Card
 
-## Putting it All Together
+### Indicator LEDs
+
+---
+
+## Code
+
+### Reading GPS Data
+
+### Parsing GPS Data
+
+### Using microSD Breakout Board
+
+### Indicator LEDS
+
+---
+
+### Putting it All Together
 
