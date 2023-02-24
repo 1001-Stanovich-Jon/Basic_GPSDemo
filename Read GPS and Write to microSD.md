@@ -16,7 +16,9 @@ OK, if you're following along, last time we went over some of our decisions, we 
 
 ### Why use Adafruit products again?
 
-We like Adafruit because they let us be lazy. They have designed breakoutboards for a large variety of sensors, which saves us the pain of reading datasheets, sourcing components, and designing PCBs. Also, this means we have a reference PCB for design in the future when we decide to make our own PCB (this is useful if the datasheet isn't good at describing external circuitry).
+We like Adafruit because they let us be lazy. They have designed breakoutboards for a large variety of sensors, which saves us the pain of reading datasheets, sourcing components, and designing PCBs. 
+
+Also, this means we have a reference PCB for design in the future when we decide to make our own PCB (this is useful if the datasheet isn't good at describing external circuitry).
 
 Also because they have a ton of documentation, code libraries, and tutorials available for pretty much *ALL* of their products. This means its unlikely that we'll get stuck getting something to work. 
 
@@ -26,7 +28,9 @@ Thanks Lady Ada.
 
 ### Why use Arduino?
 
-Well, again, it has all the external circuitry done, it's relatively cheap, and has a programming IDE for it that makes it easier to program than having to learn C/C++ and use other programmers to flash the chip. Also, the Arduino IDE is what makes it super easy to share libraries for the breakout boards. It's a great introduction to microcontrollers, and will let you become comfortable with the basics before eventually (well, maybe) learning how to do it without the Arduino base, or even on another microcontroller like the RP2040.
+Well, again, it has all the external circuitry done, it's relatively cheap, and has a programming IDE for it that makes it easier to program than having to learn C/C++ and use other programmers to flash the chip. 
+
+Also, the Arduino IDE is what makes it super easy to share libraries for the breakout boards. It's a great introduction to microcontrollers, and will let you become comfortable with the basics before eventually (well, maybe) learning how to do it without the Arduino base, or even on another microcontroller like the RP2040.
 
 Another reason is that it readily supports the most common communication protocols for hobby sensors:
 
@@ -67,7 +71,9 @@ and recall that it uses the USART communication protocol
 
 ## microSD
 
-We're just using an Amazon special because I'm cheap (and I hope you are too). Also, because Adafruit also offers a *surface mounted SD flash card* - **amazing**. This means any code we write for these, will work with a surface mounted component - this gives us flexibility. We can use the card and holders for non-violent situations, and the surface mount for the violent situations (i.e. rockets taking off and hugging the ground at high speeds). The card slots are nice too because you can actualy remove the card to retrieve the data.
+We're just using an Amazon special because I'm cheap (and I hope you are too). Also, because Adafruit also offers a *surface mounted SD flash card* - **amazing**. This means any code we write for these, will work with a surface mounted component - this gives us flexibility. 
+
+We can use the card and holders for non-violent situations, and the surface mount for the violent situations (i.e. rockets taking off and hugging the ground at high speeds). The card slots are nice too because you can actualy remove the card to retrieve the data.
 
 The pinout for the microSD card slot is below
 
