@@ -9,9 +9,9 @@ OK, our goals for this session are:
 - Maybe bust out the logic analyzer?
 
 
-If you want to see last times infor, you can [(click here)](https://github.com/1001-Stanovich-Jon/Basic_GPSDemo/blob/main/Outline.md)
+For reference of what we did previously you can [(click here)](https://github.com/1001-Stanovich-Jon/Basic_GPSDemo/blob/main/Outline.md)
 
-Otherwise we'll do a basic recap real quick.
+But let's do a basic recap real quick.
 
 ---
 
