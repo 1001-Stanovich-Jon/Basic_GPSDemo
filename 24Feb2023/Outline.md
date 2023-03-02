@@ -9,16 +9,18 @@ OK, our goals for this session are:
 - Maybe bust out the logic analyzer?
 
 
-## Recap
+If you want to see last times infor, you can [(click here)](https://github.com/1001-Stanovich-Jon/Basic_GPSDemo/blob/main/Outline.md)
 
-OK, if you're following along, last time we went over some of our decisions, we won't go into super detail again [(if you want that click here)](https://github.com/1001-Stanovich-Jon/Basic_GPSDemo/blob/main/Outline.md), but here's a basic summary:
+Otherwise we'll do a basic recap real quick.
 
 ---
 
-### Why are we using... well, what we're using?
+## Why are we using... well, what we're using?
+
+![image](https://user-images.githubusercontent.com/84261577/222334914-0c9da662-3efd-4f5f-95be-bfeec5337455.png)
 
 
-#### Adafruit
+### Adafruit
 
 We like Adafruit - they let us be lazy when prototyping. They let us be lazy because they design and sell breakout boards, which means:
 
@@ -26,16 +28,15 @@ We like Adafruit - they let us be lazy when prototyping. They let us be lazy bec
 - We don't have to write code libraries ourselves
 - We don't have to worry about level shifting
 
-
 So, basically, they just save us time, money, and having to know stuff. Also they provide all their files and models! Which means they are a great tool for learning how to design around a chip because you can look at a working product, and refer to the datasheet to see why they designed the board the way they did (so that **you can do it one day**).
 
 Also because they have a ton of documentation, code libraries, and tutorials available for pretty much *ALL* of their products. This means its unlikely that we'll get stuck getting something to work. 
 
 Thanks Lady Ada.
 
----
+![image](https://user-images.githubusercontent.com/84261577/222335177-da981c10-1317-4bb8-a26d-83a69026cc59.png)
 
-#### Arduino?
+### Arduino?
 
 Well, again, premade PCB with USB interface, relatively cheap, and has a programming IDE for it that makes it easier to program than other microcontrollers (Like PIC or STM32s). Basically - **it's beginner and lazy-person friendly**.
 
@@ -45,9 +46,7 @@ Again, there is a huge community behind Arduino, just like Adafruit, and so it m
 
 Thanks Italians.
 
----
-
-#### Quick Recap from Last Time
+### Other Notes
 
 Besides our decision choices, we also covered the following last time:
 
