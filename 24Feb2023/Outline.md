@@ -24,27 +24,26 @@ But let's do a basic recap real quick.
 
 We like Adafruit - they let us be lazy when prototyping. They let us be lazy because they design and sell breakout boards, which means:
 
-- We don't have to read datasheets and designing external circuits for chips (much)
-- We don't have to write code libraries ourselves
-- We don't have to worry about level shifting
+- We don't have to read datasheets (well, less at least)
+- We don't have to design (rather copy paste from datasheets) external circuits for chips!
+- We don't have to write code libraries ourselves!
+- We don't have to worry about level shifting!
 
-So, basically, they just save us time, money, and having to know stuff. Also they provide all their files and models! Which means they are a great tool for learning how to design around a chip because you can look at a working product, and refer to the datasheet to see why they designed the board the way they did (so that **you can do it one day**).
+All good things.
 
-Also because they have a ton of documentation, code libraries, and tutorials available for pretty much *ALL* of their products. This means its unlikely that we'll get stuck getting something to work. 
-
-Thanks Lady Ada.
+So, basically, they just save us time, money, and having to know stuff. Also they provide all their files and models! Which means they are a great tool for learning how to design around a chip because you can look at a working product, and refer to the datasheet to see why they designed the board the way they did (so that **you can do it one day**). Additionally, because they have a ton of documentation, code libraries, and tutorials available for pretty much *ALL* of their products, it's unlikely we'll get stuck getting something to work. 
+_
+Thanks Lady Ada!_
 
 ## Arduino?
 
 ![image](https://user-images.githubusercontent.com/84261577/222335177-da981c10-1317-4bb8-a26d-83a69026cc59.png)
 
-Well, again, premade PCB with USB interface, relatively cheap, and has a programming IDE for it that makes it easier to program than other microcontrollers (Like PIC or STM32s). Basically - **it's beginner and lazy-person friendly**.
+Well, again, premade PCB with USB interface, relatively cheap, and has a programming IDE for it that makes it easier to program than other microcontrollers (depending on who you ask). Basically - **it's beginner and lazy-person friendly**. Nice.
 
-The Arduino IDE makes it super easy to share libraries for the breakout boards. It's a great introduction to microcontrollers, and will let you become comfortable with the basics before eventually (well, if you're into it) learning how to do it without the Arduino base, or even on another microcontroller.
-
-Again, there is a huge community behind Arduino, just like Adafruit, and so it makes it incredibly easy to use Adafruits products and have a fairly painless experience getting off to a good start.
-
-Thanks Italians.
+The Arduino IDE makes it super easy to share libraries for the breakout boards. It's a great introduction to microcontrollers, and if you enjoy doing this stuff it will let you become comfortable with the basics before eventually learning how to do it without the Arduino base on another microcontroller. Again, there is a huge community behind Arduino, just like Adafruit, and so it makes it incredibly easy to use Adafruits products and have a fairly painless experience getting off to a good start.
+_
+Thanks Italians._
 
 ### Other Notes
 
