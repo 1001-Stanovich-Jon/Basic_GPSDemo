@@ -15,12 +15,12 @@ Otherwise we'll do a basic recap real quick.
 
 ---
 
-## Why are we using... well, what we're using?
+# Why are we using... well, what we're using?
+
+## Adafruit
 
 ![image](https://user-images.githubusercontent.com/84261577/222334914-0c9da662-3efd-4f5f-95be-bfeec5337455.png)
 
-
-### Adafruit
 
 We like Adafruit - they let us be lazy when prototyping. They let us be lazy because they design and sell breakout boards, which means:
 
@@ -34,9 +34,9 @@ Also because they have a ton of documentation, code libraries, and tutorials ava
 
 Thanks Lady Ada.
 
-![image](https://user-images.githubusercontent.com/84261577/222335177-da981c10-1317-4bb8-a26d-83a69026cc59.png)
+## Arduino?
 
-### Arduino?
+![image](https://user-images.githubusercontent.com/84261577/222335177-da981c10-1317-4bb8-a26d-83a69026cc59.png)
 
 Well, again, premade PCB with USB interface, relatively cheap, and has a programming IDE for it that makes it easier to program than other microcontrollers (Like PIC or STM32s). Basically - **it's beginner and lazy-person friendly**.
 
@@ -137,6 +137,13 @@ ADD LATER
 ---
 
 ## Code
+
+Some notes on parsing input... I tried two ways of reading the data
+
+- Looking for the sentence we want and then writing each received byte to the SD card directly
+- Reading in the data and writing it to the SD card after saving it to memory on Arduino
+
+The direct write was *slightly* faster, but not worth the horrible looking logic I used (too many if statements). So we're going to stick to just reading the whole sentence and *then* write to the SD card.
 
 ### Reading GPS Data
 
