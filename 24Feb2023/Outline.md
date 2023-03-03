@@ -156,3 +156,10 @@ The direct write was *slightly* faster, but not worth the horrible looking logic
 
 ### Putting it All Together
 
+
+Next time: we can go over parsing, and how to organize. Review basics of why we designed led indicators and how they correlate to different steps.  Recap steps go.
+
+ALso go over checking for gps signal.
+
+Show everyone else how we setup, show how to list files, use them, and dump file. Then we go over how the data looks, and how we need to process the data. This will be the intro to parsing the data so we extract only what we want for being organized and saving memory.
+
