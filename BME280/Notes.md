@@ -2,6 +2,9 @@
 
 - Chip confirmed working using Adafruits testing sketch.
 
+Good reference:
+https://community.bosch-sensortec.com/t5/Knowledge-base/BME280-Sensor-Data-Interpretation/ta-p/13912
+
 # Sample Data Collected
 
 I didn't feel like reading the datasheet so I captured the I2C communication that the Adafruit test sketch produces. The first transaction is shown below
