@@ -74,3 +74,16 @@ Then, the write to `0xF2` of `0x05` which sets oversampling to x16. (Change does
 Then we write to `0xF5` the value of `0x00`. This sets the filter off and sets $$t_{standby}$$ to 0.5ms.
 
 Then, we write again to `0xF4` since it will take affect now (because we've written to `ctrl_hum`) and we write `B7`. This sets the oversampling for temperature and pressure to x16, and also enables normal mode.
+
+
+# Now what?
+
+Well,by doing the above, we have verified we're talking to the chip, reset it, ensured it's status was not nonzero, and then read all of the calibration
+
+- Verified communication
+- Verified device ID
+- Verified Status of no measurements or writes taking place
+- Requested and Received Calibration Data
+- Set configuration setting
+
+After this, all that's left is to start taking measurements. This is where we look again to the datasheet. 
